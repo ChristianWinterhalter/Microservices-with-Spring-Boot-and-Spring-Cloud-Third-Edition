@@ -1,9 +1,12 @@
 package se.magnus.microservices.core.product;
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
+@ComponentScan("se.magnus.api")
+@ComponentScan("se.magnus.util")
 public class ProductServiceApplication {
 
 	public static void main(String[] args) {
